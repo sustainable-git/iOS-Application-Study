@@ -1,15 +1,22 @@
 # Chapter1 : IOS 11, Xcode 9와 Swift 4 소개
-<img>
-<img>
-<img>
-<img>
+
+<p align = "center"> <img src = "https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%201/imageFiles/1.jpg?raw=true" width = "450"/> <img src = "https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%201/imageFiles/2.jpg?raw=true" width = "450"/> </p>
+
+<p align = "center"> <img src = "https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%201/imageFiles/3.jpg?raw=true" width = "450"/> <img src = "https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%201/imageFiles/4.jpg?raw=true" width = "450"/></p>
+
 - Core OS : iOS는 [BSD](https://ko.wikipedia.org/wiki/BSD) 계열 Unix이다. 그래서 C언어를 기반으로 한다
 - Cocoa Touch : UI layer임(버튼, 슬라이더 등이 존재함)
 
-## Concentration Game
-<demo>
+<br>
+ <br>
 
-## Today i leanred
+## Concentration Game
+<p align = "center"> <img width="100%" src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%201/imageFiles/demo.gif?raw=true"> </p>
+
+<br>
+ <br>
+
+## Today i learned
 - Object Library 단축키 : CMD + SHIFT + L
 - Debug 영역 단축키 : CMD + SHIFT + Y
 - Storyboard와 Code는 Control 키를 이용한 Drag & Drop 으로 연결이 가능
@@ -28,5 +35,5 @@
     @IBOutlet var cardButtons: [UIButton]!
 ~~~
 - 색상을 지정할 때에 ```color literal```을 사용할 수 있음
-<img>
-<img>
+<p align = "center"><img src = "https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%201/imageFiles/5.jpg?raw=true" width = "400"/></p>
+<p align = "center"><img src = "https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%201/imageFiles/6.jpg?raw=true" width = "400"/></p>
