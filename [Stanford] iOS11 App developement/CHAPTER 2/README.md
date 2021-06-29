@@ -1,5 +1,5 @@
 # Chapter2 : MVC(Model-View-Controller) 패턴
-<img>
+<p align = "center"> <img src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%202/imageFiles/1.jpg?raw=true> </p>
 
 - MVC(Model-View-Controller) 패턴
   - 시스템 내의 "객체"를 Model, View, Controller로 구분하여 설계하는 방식
@@ -15,8 +15,14 @@
     - Model이나 Controller의 구성요소를 몰라야 함
     - 변경이 일어나면, 변경 통지에 대한 처리방법을 규현해야 함
 
+<br>
+ <br>
+
 ## Concentration Game
-<demo>
+<p align = "center"> <img width="100%" src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%202/imageFiles/demo.gif?raw=true> </p>
+
+<br>
+ <br>
 
 ## Today i leanred
 - Struct Vs Class
@@ -31,7 +37,7 @@
     lazy var game = Concentration(numberOfPairsOfCards: cardButtons.count/2)
 ~~~
 
--  - Computed Property : 
+-  - Computed Property : "값"을 연산하고, return 함
 ~~~
     class Point { // 이번 강의 속에 존재하는 내용이 아님. 예시임
         var tempX : Int = 1
