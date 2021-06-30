@@ -1,10 +1,16 @@
 # Assignment 1 : Concentration
-[Assignment1 Pdf📎]
-<img>
-<img>
+[Assignment1 Pdf📎](https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Assignment%201/Programming_Project_1_Concentration.pdf)
+<p align="left"> <img src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Assignment%201/imageFiles/1.jpg?raw=true"> </p>
+<p align="left"> <img src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Assignment%201/imageFiles/2.jpg?raw=true"> </p>
+
+<br>
+ <br>
 
 ## Concentration Game
-<demo>
+<p align="center"> <img width=100% src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Assignment%201/imageFiles/demo.gif?raw=true> </p>
+
+<br>
+ <br>
 
 ## Required Tasks
 1. Get the Concentration game working as demonstrated in lectures 1 and 2. Type in all the code. Do not copy/paste from anywhere.
