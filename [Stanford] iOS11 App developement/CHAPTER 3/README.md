@@ -1,9 +1,15 @@
 # Chapter3 : Swift 프로그래밍 언어 - Part 1
 ## Concentration Game
-<demo>
+<p align="center"> <img width=100% src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%203/imageFiles/demo.gif?raw=true ></p>
+
+<br>
+ <br>
 
 ## Today i learned
-- Storyboard 하단 메뉴 <img>
+
+<p><img src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%203/imageFiles/1.jpg?raw=true></p>
+
+- Storyboard
   - Align / Add new Constraints / Resolve Auto Layout Issues / Embed in
   - 개별 Stack View도 하나의 객체처럼 조작 가능
   - View와 View를 control + drag 로 연결하면 둘 사이의 constraints를 설정 가능
@@ -39,7 +45,8 @@
 ```
     assert(cards.indices.contains(index), "Concentration.chooseCard(at: \(index)): chosen index not in the cards")
 ```
-<img>
+
+<p><img src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%203/imageFiles/2.jpg?raw=true></p>
 
 - Extensions
   - you can add methods/properties to a class/struct/enum
