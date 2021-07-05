@@ -24,14 +24,14 @@
 - 이름을 변경해야 할 경우 : Command + 우클릭을 이용해 Rename을 해주어야 함
 - 좋은 이름을 고르는 방법 : [바로가기](https://swift.org/documentation/api-design-guidelines/#naming)
 - didSet : 프로퍼티가 변경될 때마다 코드가 실행되는 구문
-~~~
+~~~swift
     var flipCount = 0 {
         didSet { flipCountLabel.text = "Flip : \(flipCount)" }
     } // flipCount 값이 변경되면 didSet 구문이 실행됨
 ~~~
 - 아래의 Outlet Collection에는 등록한 순서대로 append됨
 - 때문에 ```cardButtons.firstIndex(of: sender)``` 값이 0부터 지정됨
-~~~
+~~~swift
     @IBOutlet var cardButtons: [UIButton]!
 ~~~
 - 색상을 지정할 때에 ```color literal```을 사용할 수 있음

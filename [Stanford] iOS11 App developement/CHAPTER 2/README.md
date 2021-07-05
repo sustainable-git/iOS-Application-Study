@@ -33,12 +33,12 @@
 - Property(Stored, Computed, Type)
   - Stored Property : Struct 또는 Class에서 "값"을 저장함
     - Lazy Stored Property : 값이 사용되기 전까지는 값이 계산되지 않음
-~~~
+~~~swift
     lazy var game = Concentration(numberOfPairsOfCards: cardButtons.count/2)
 ~~~
 
 -  - Computed Property : "값"을 연산하고, return 함
-~~~
+~~~swift
     class Point { // 이번 강의 속에 존재하는 내용이 아님. 예시임
         var tempX : Int = 1
         var x : Int { 
@@ -49,7 +49,7 @@
 ~~~
 
 -  - Type property : 타입 자체가 가지는 속성 및 함수
-~~~
+~~~swift
     struct Card {
         static var identifierFactory = 0
         static func getUniqueIdentifier() -> Int {

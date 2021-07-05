@@ -20,7 +20,7 @@
 - 카드 갯수 8개 -> 16개로 변경
 
 3. Add a “New Game” button to your UI which ends the current game in progress and begins a brand new game.
-```
+```swift
     // Control 부분
     @IBAction func newGameButton(_ sender: UIButton) {
         game.restart() // Model을 초기화
@@ -44,12 +44,12 @@
 ```
 
 4. Currently the cards in the Model are not randomized (that’s why matching cards end up always in the same place in our UI). Shuffle the cards in Concentration’s  init() method.
-```
+```swift
     cards.shuffle() // init, restart 함수에 포함 
 ```
 
 5. Give your game the concept of a “theme”. A theme determines the set of emoji from which cards are chosen. All emoji in a given theme are related by that theme. See the Hints for example themes. Your game should have at least 6 different themes and should choose a random theme each time a new game starts.
-```
+```swift
     lazy var theme = themeInitializer[Int(arc4random_uniform(UInt32(themeInitializer.count)))] // themeInitializer 초기화 이후, theme를 random하게 선택
     // ...
     @IBAction func newGameButton(_ sender: UIButton) {
@@ -60,13 +60,13 @@
 ```
 
 6. Your architecture must make it possible to add a new theme in a single line of code.
-```
+```swift
     // Control 부분
     let themeInitializer = [["🐶", "🐱", "🐭", "🐹", "🐰", "🦊", "🐻", "🐼"]] // theme 추가시 themeInitializer 배열에 추가하면 됨
 ```
 
 7. Add a game score label to your UI. Score the game by giving 2 points for every match and penalizing 1 point for every previously seen card that is involved in a mismatch.
-```
+```swift
     if let matchIndex = flipedCardIndex, matchIndex != index {
         if cards[index].identifier == cards[matchIndex].identifier { // matched
             cards[index].isMatched = true
@@ -82,7 +82,7 @@
     }
 ```
 8. Tracking the flip count almost certainly does not belong in your Controller in a proper MVC architecture. Fix that.
-```
+```swift
     // Model 부분
     var flipcount = 0
     // ...

@@ -19,7 +19,7 @@
   - left와 right를 사용하지 않았음
 
 - Tuple 사용법
-```
+```swift
     let x = ("hello", 5, 0.85)
     let (word, number, value) = x // word = "hello", number = 5, value = 0.85
 
@@ -42,7 +42,7 @@
   - private : only callable from within this object
 
 - Assert
-```
+```swift
     assert(cards.indices.contains(index), "Concentration.chooseCard(at: \(index)): chosen index not in the cards")
 ```
 
@@ -52,10 +52,10 @@
   - you can add methods/properties to a class/struct/enum
   - restrictions : 값을 저장하는 변수를 만들 수 없음
   - tip : 해당 타입을 확장하는 용도로만 사용해야 함
-```
+```swift
     let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count))) // extension 사용 전
 ``` 
-```
+```swift
     extension Int {
         var arc4ramdom : Int {
             return Int(arc4random_uniform(UInt32(self)))
@@ -66,7 +66,7 @@
 - Enum
   - 각각의 case들이 연동된 데이터 혹은 값을 가질 수 있음
   - 이외에는 아무것도 저장할 수 없음
-```
+```swift
     enum FastFoodMenuItem {
         case hamburger(patties: Int)
         case fries(size: FriyOrderSize)
@@ -75,13 +75,13 @@
     }
 ```
 -  - Setting the value
-```
+```swift
     let menuItem: FastFoodMenuItem = FastFoodMenuItem.hamburger(patties: 2)
     let otherItem: FastFoodMenuItem = .cookie
     let sideItem = FastFoodMenuItem.fries(size: .large)
 ```
 -  - Checking an enum's state
-```
+```swift
     switch menuItem {
         case .hamburger(let pattyCount):  print("a burger with \(pattyCount) patties!")
         case .fries: /* */
