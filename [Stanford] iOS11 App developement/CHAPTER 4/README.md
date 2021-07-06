@@ -1,16 +1,27 @@
 # Chapter4 : Swift 프로그래밍 언어 - Part 2
-<img>
+<p align="center"><img src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/1.jpg?raw=true></P>
+
+<br>
+ <br>
 
 ## Concentration Game
-<demo>
-
+<p align="center"><img src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/demo.jpg?raw=true>
+  
+<br>
+ <br>
+  
 ## Today i learned
 
 - class와 struct의 차이
   - struct에서 proterty를 수정하려면 mutating을 붙여야함! (class는 필요없음)
   - 구조체는 value type임. 따라서 heap에 저장되지 않고, 매번 복사해야 하므로 mutating 붙여 내용이 변경되었을 때만 복사함
 
-<img>
+<br>
+ <br>
+  
+### Protocol  
+<p><img width="50%" src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/2.jpg?raw=true></p>
+
 - Protocol
     - protocol is simply a collection of method and property declarations
     - kotlin의 interface와 유사하며, 다중 상속을 제공함
@@ -42,7 +53,11 @@
     }
 ```
 
-<img> <img>
+<br>
+ <br>
+
+<p><img width=50% src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/3-1.jpg?raw=true><img width=50% src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/3-2.jpg?raw=true> </p>
+
 - Deligation
   - we use protocols to implement "blind communication" between a View and its Controller
     1. A View declares a delegation protocol
@@ -60,6 +75,9 @@
     }
 ```
 
+<br>
+ <br>
+
 - Another use of Protocols
   - Being a key in a Dictionary
 (Dictionary is declared like this : Dictionary<Key: Hashable, Value>
@@ -74,7 +92,10 @@
     }
 ```
 
-- Card를 Hashable 하게 만드는 방법
+<br>
+ <br>
+
+- Card를 Hashable로 만드는 방법
 ```swift
     struct Card : Hashable {
         func hash(into hasher: inout Hasher) { } // hash value
@@ -87,7 +108,7 @@
 ```
 |**Before**|**After**|
 |:-:|:-:|
-|<img>|<img>|
+|<img src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/4-1.jpg?raw=true">|<img src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/4-2.jpg?raw=true">|
 
 <br>
  <br>
@@ -105,11 +126,19 @@
     }
 ```
 
+<br>
+ <br>
+
 - Functional Programming
   - By combining protocols with generics and extenstions,
-   you can build code that focusses more on the behavior of data structures than storage
+  - you can build code that focusses more on the behavior of data structures than storage
+   
+<br>
+ <br>
 
-<img>
+### String
+<p><img width=50% src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/5.jpg?raw=true></p>
+
 - String
   - The Characters(Unicodes) in a String
   - 문자열은 index가 불가능함. 대신 String.Index를 사용
@@ -121,9 +150,14 @@
 ```
 |**Before**|**After**|
 |:-:|:-:|
-|<img>|<img>|
+|<img src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/6-1.jpg?raw=true">|<img src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/6-2.jpg?raw=true">|
 
-<img>
+<br>
+ <br>
+
+### NSAttributedString
+<p><img width=50% src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/7.jpg?raw=true></p>
+
 - NSAttributedString
   - "NS" is a clue of "old style" Objective-C
   - To get mutability, use `NSMutableAttributedString`
@@ -138,7 +172,7 @@
     let attribtext = NSAttributedString(string: "Flips: 0", attributes: attributes)
     flipCountLabel.attributedText = attribtext
 ```
-<img>
+<p><img src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/8.jpg?raw=true></p>
 
 <br>
  <br>
@@ -152,7 +186,12 @@
     let result = operation(4.0) // 2
 ```
 
-<img>
+<br>
+ <br>
+
+### Closures
+<p><img width="50%" src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/9.jpg?raw=true></p>
+
 - Closures
     - "in line" function
     - If the closure was the only argument, you can skip the () completely
@@ -171,5 +210,5 @@
 ```
 |**Before**|**After**|
 |:-:|:-:|
-|<img>|<img>|
+|<img src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/10-1.jpg?raw=true">|<p><img src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/10-2.jpg?raw=true"></p><p align="left"><img width="60%" src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%204/imageFiles/10-3.jpg?raw=true"></p>|
 
