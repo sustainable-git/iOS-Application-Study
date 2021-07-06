@@ -1,4 +1,9 @@
 # Chapter3 : Swift 프로그래밍 언어 - Part 1
+<p align="center"> <img src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%203/imageFiles/3.jpg?raw=true> </p>
+
+<br>
+ <br>
+
 ## Concentration Game
 <p align="center"> <img width=100% src=https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%203/imageFiles/demo.gif?raw=true ></p>
 
