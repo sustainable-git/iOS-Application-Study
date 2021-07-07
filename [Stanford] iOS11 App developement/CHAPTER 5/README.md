@@ -1,8 +1,14 @@
 # Chapter5 : 뷰에 나타내기
-<img>
+<img src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%205/imageFiles/1.jpg?raw=true">
+
+<br>
+ <br>
 
 ## Playing Card
-<demo>
+<img src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%205/imageFiles/demo.jpg?raw=true">
+
+<br>
+ <br>
 
 ## Today i learned
 - [Error Handling](#Error-Handling)
@@ -12,8 +18,12 @@
 - [Drawing](#Drawing)
 - [CustomStringConvertible](#CustomStringConvertible)
 
+<br>
+ <br>
+
 ### Error Handling
-<img>
+<img width=50% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%205/imageFiles/2.jpg?raw=true">
+
 - Thrown Errors
   - Swift methods can throw errors
 
@@ -34,8 +44,12 @@
                                                 // else, returns an Int
 ```
 
+<br>
+ <br>
+
 ### Any
-<img>
+<img width=50% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%205/imageFiles/3.jpg?raw=true">
+
 - Any & AnyObject
   - These types are for old Objective-C APIs
   - AnyObject holds classes only
@@ -72,8 +86,12 @@
     }
 ```
 
+<br>
+ <br>
+
 ### Other Interesting Classes
-<img>
+<img width=50% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%205/imageFiles/4.jpg?raw=true">
+
 - Other Interesting Classes
   - NSObject
       - Base class for all Objective-C classes
@@ -91,8 +109,12 @@
   - Data
     - A value type  "bag o' bits"
 
+<br>
+ <br>
+
 ### Views
-<img>
+<img width=50% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%205/imageFiles/5.jpg?raw=true">
+
 - Views
     - A view (i.e. `UIView` subclass) represents a rectangular area
     - Defines a coordinate space
@@ -179,7 +201,11 @@
     3. Set drawing attributes like colors, fonts, etc
     4. Stroke or fill the paths
 
-<img>
+<br>
+ <br>
+
+<img width=50% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%205/imageFiles/6.jpg?raw=true">
+
 - Defining a Path
   - Create a UIBezierPath
 ```swift
@@ -197,8 +223,12 @@
     path.stroke()
 ```
 
+<br>
+ <br>
+ 
 ### Drawing
-<img>
+<img width=50% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%205/imageFiles/7.jpg?raw=true">
+
 - Drawing
   - Clipping
     - `addClip()`
@@ -239,7 +269,11 @@
     attrString.addAttribute(.strokeColor, value: UIColor.orange, range: nsrange)
 ```
 
-<img>
+<br>
+ <br>
+
+<img width=50% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%205/imageFiles/8.jpg?raw=true">
+
 - Fonts
   - Be sure to choose a `preferred font`
   - Simple way to get a font in code
@@ -287,10 +321,13 @@
     }
 ```
 
+<br>
+ <br>
+
 ### CustomStringConvertible
 - It can provide their own representation 
-- `var description: String` is needed
-<img>
+- `var description: String` is necessary
+<img width=40% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%205/imageFiles/9.jpg?raw=true">
 
 
 
