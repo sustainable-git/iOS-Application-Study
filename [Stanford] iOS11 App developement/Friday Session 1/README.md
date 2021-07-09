@@ -1,10 +1,10 @@
 # Friday Session 1 : 디버깅 및 Xcode 팁
 ### Contents
-[Xcode 단축키](#Xcode-단축키)
-[Mark Up](#Mark-up)
-[Breakpoint](#Breakpoint)
-[Debug with Console](#Debug-with-Console)
-[Project Settings](#Project-Settings)
+- [Xcode 단축키](#Xcode-단축키)
+- [Mark Up](#Mark-up)
+- [Breakpoint](#Breakpoint)
+- [Debug with Console](#Debug-with-Console)
+- [Project Settings](#Project-Settings)
 
 <br>
  <br>
@@ -20,24 +20,36 @@
 |CMD + /|Comment out|
 |CTRL + I|Re-indent|
 
-## Mark Up
-<img>
-- // MARK
+<br>
+ <br>
 
+## Mark Up
+<img width=50% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%201/imageFiles/1.jpg?raw=true">
+
+- // MARK:
+
+<br>
+ <br>
 
 ### Breakpoint
-<img>
+<img src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%201/imageFiles/2.jpg?raw=true">
+
+<br>
+ <br>
 
 ### Debug with Console
-<img>
+<img width=50% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%201/imageFiles/3.jpg?raw=true">
 
  - po : print object
  - p : print description
 
-### Project Settings
-- build settings
-<img>
+<br>
+ <br>
 
-- build Phase
+### Project Settings
+- Build settings
+<img width=50% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%201/imageFiles/4.jpg?raw=true">
+
+- Build Phase
   - 프레임워크 추가 가능
-<img>
+<img width=50% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%201/imageFiles/5.jpg?raw=true">
