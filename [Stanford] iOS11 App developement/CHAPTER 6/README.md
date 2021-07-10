@@ -1,11 +1,11 @@
 # Chapter6 : 멀티터치
-<Img>
+<Img src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%206/imageFiles/01.jpg?raw=true">
 
 <br>
  <br>
 
 ## Playing Card
-<demo>
+<img width=100% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%206/imageFiles/demo.gif?raw=true">
 
 <br>
  <br>
@@ -14,6 +14,8 @@
 - [View](#View)
 - [Gesture](#Gesture)
 
+<br>
+ <br>
 
 ### View
 - Drawing
@@ -22,20 +24,29 @@
    - Change the class to `The class` you made
    - And use `func draw` to draw
 
-<img>
-<img>
-<img>
+<img width="480" src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%206/imageFiles/02.jpg?raw=true">
+<img width="480" src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%206/imageFiles/03.jpg?raw=true">
+<img width="240" src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%206/imageFiles/04.jpg?raw=true">
 
+<br>
+ <br>
+ 
 - Not to see background with transparent view
   - off the `Opaque` option
 
-<img>
+<img width="240" src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%206/imageFiles/05.jpg?raw=true">
 
+<br>
+ <br>
+ 
 - Font
   - For users with various font sizes, use `UIFontMetrics`
   - To center, use `NSMutableParagraphStyle()`
 
-<img>
+<img width="240" src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%206/imageFiles/06.jpg?raw=true">
+ 
+<br>
+ <br>
 
 - Redrawing in code
   - Use `setNeedsDisplay()`
@@ -89,7 +100,10 @@
   - Priority
     - Default value : 1000
 
-<img>
+<img width="240" src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%206/imageFiles/07.jpg?raw=true">
+ 
+<br>
+ <br>
 
 - View with Images
   - Use `UIImage` with `draw()`
@@ -114,13 +128,13 @@
 - To change, `@IBInspectable` in front of variables
 - At this moment, no type inferring allowed
 
-<img>
+<img width="480" src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%206/imageFiles/08.jpg?raw=true">
 
 <br>
  <br>
 
 ### Gesture
-<img>
+<img width="480" src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%206/imageFiles/09.jpg?raw=true">
 
 - Gestures
     1. Adding a gesture recognizer to a UIView (Controller)
@@ -176,10 +190,12 @@
 
 - Implementing a gesture in storyboard
 
-<img>
-<img>
+<img width="480" src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%206/imageFiles/10.jpg?raw=true">
+<img width="480" src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%206/imageFiles/11.jpg?raw=true">
 
-
+<br>
+ <br>
+ 
 - Dealing with gesture `state`
   - You need to use switch
 
