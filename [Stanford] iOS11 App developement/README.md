@@ -11,4 +11,4 @@
 |2021-07-07|뷰에 나타내기|[CHAPTER 5](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%205)
 |2021-07-09|Set|[Assignment 2](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/Assignment%202)
 |2021-07-09|1: 디버깅 및 Xcode 팁|[Friday Session 1](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%201)
-
+|2021-07-10|멀티터치|[CHAPTER 6](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%206)
