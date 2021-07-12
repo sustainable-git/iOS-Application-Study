@@ -15,6 +15,12 @@
 [Timer]
 [Animation]
 
+
+
+### Muptiple MVCs
+
+<img>
+
 - MVCs working together
   - iOS provides some Controllers whose View is "other MVCs"
     - `UITabBarController`
@@ -38,6 +44,10 @@
 <img>
 <img>
 
+
+
+
+
 - Accessing the sub-MVCs
   - You can get the sub-MVCs via the `viewControllers` property
     - `var viewControllers : [UIViewController]? { get set }`
@@ -59,6 +69,8 @@
 -  - Split view can only do properly on iPad/iPhone+
       - Wrapping master in Navigation Controller, you can make it adapt
 
+
+
 <img>
 
 - Segues
@@ -67,11 +79,11 @@
   - Segues always create a `new instance` of an MVC
   - Identifier is needed preparing for a segue
 
-<img>
+
 
 - Preparing for a Segue
   - Preparation is happening `BEFORE` outlet get set
- 
+
 ```swift
     func prepare(for segue : UIStoryboardSegue, sender : Any?) {
         if let identifier = segue.identifier { // identifier should not be a nil
@@ -91,6 +103,11 @@
   - `func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool`
   - If it returns false, you can prevent happening
 
+
+
+
+
+
 - Creating View Controller on Storyboard
   - Arrow means the first view to show
 
@@ -98,9 +115,13 @@
 <img>
 
 - Segues
+  - To add segue between two views, just Control + drag
+  - If you want to call, use identifier
 
 <img> // control + drag with button and view
 <img> // Choose theme
+
+
 
 - Segue preparation
   - Because that preparation happens before outlet, errors can occur
@@ -117,14 +138,26 @@
     }
 ```
 
+
+
+
+
 - Split View Controller
 
 <img> // master
 <img> // Show Detail
 
+
+
+
+
 - Tab Bar Controller
 
 <img>
+
+
+
+
 
 - Segue in code
   - Make segue between two views
@@ -137,7 +170,7 @@
 
 - Changing theme without using segue
   - Below works with splitView divies(iPad)
- 
+
 ```swift
     private var splitViewDetailConcentrationViewController: ConcentrationViewController? {
         return splitViewController?.viewControllers.last as? ConcentrationViewController
@@ -200,12 +233,48 @@
     } // putting detail on top of master
 ```
 
-timer continues~
+
+
+### Timer
+
+- Timer
+  - Used to execute code periodically
+
+```swift
+class func scheduledTimer(withTimeInterval: TimeInterval, repeats: Bool, block: (Timer) -> Void) -> Timer
+
+	private weak var timer: Timer?
+	timer = Timer.scheduledTimer(withTimeInterval: 2.0, repeat: true){ /* closure */ }
+	// every single 2 seconds, closure executes
+```
+
+- Stopping timer
+  - `timer.invalidate` // this makes timer nil ( reason of `weak` )
+
+- Tolerance : 오차
+  - Tolerance can make your battery efficiency better
+  - `timer.tolerance = 10` // in 10 seconds
+
+<br>  <br>
 
 
 
+### Animation
+
+- Kinds of Animation
+  - Animating UIView properties
+  - Animating Controller transitions
+  - Core Animation
+  - OpenGL and Metal
+  - SpriteKit
+  - Dynamic Animation
 
 
 
-
-
+- UIView Animation
+  - Changes to certain UIView properties can be animated over time
+    - frame/center
+    - bounds
+    - transform
+    - alpha
+    - backgroundColor
