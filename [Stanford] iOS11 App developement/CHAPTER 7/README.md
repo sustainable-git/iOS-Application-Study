@@ -1,25 +1,26 @@
 # Chapter7 : 여러개의 MVC, 타이머, 애니메이션
-<Img>
+<Img src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/1.jpg?raw=true">
 
 <br>
  <br>
 
 ## Playing Card
-<demo>
+<Img width=100% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/demo.gif?raw=true">
 
 <br>
  <br>
 
 ## Today i learned
-[Multiple MVCs]
-[Timer]
-[Animation]
+- [Multiple MVCs](#Multiple-MVCs)
+- [Timer](#Timer)
+- [Animation](#Animation)
 
+<br>
+ <br>
 
+### Multiple MVCs
 
-### Muptiple MVCs
-
-<img>
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/2.jpg?raw=true">
 
 - MVCs working together
   - iOS provides some Controllers whose View is "other MVCs"
@@ -31,22 +32,26 @@
 - UITabBarController
   - It lets the user choose between different MVCs
 
-<img>
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/3.jpg?raw=true">
 
+<br>
+ <br>
+	
 - UISplitViewController
   - Puts two MVCs side-by-side
 
-<img>
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/4.jpg?raw=true">
 
+<br>
+ <br>
+	
 - UINavigationController
   - Pushes and pops MVCs off of a stack
 
-<img>
-<img>
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/5.jpg?raw=true"> <img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/6.jpg?raw=true">
 
-
-
-
+<br>
+ <br>
 
 - Accessing the sub-MVCs
   - You can get the sub-MVCs via the `viewControllers` property
@@ -64,22 +69,21 @@
 
 - Wiring up MVCs
 
-<img>
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/7.jpg?raw=true">
 
 -  - Split view can only do properly on iPad/iPhone+
       - Wrapping master in Navigation Controller, you can make it adapt
 
+<br>
+ <br>
 
-
-<img>
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/8.jpg?raw=true">
 
 - Segues
   - We've built up our Controllers of Controllers
   - That MVC can cause another to appear is called a "segue"
   - Segues always create a `new instance` of an MVC
   - Identifier is needed preparing for a segue
-
-
 
 - Preparing for a Segue
   - Preparation is happening `BEFORE` outlet get set
@@ -103,25 +107,24 @@
   - `func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool`
   - If it returns false, you can prevent happening
 
-
-
-
-
-
 - Creating View Controller on Storyboard
   - Arrow means the first view to show
 
-<img>
-<img>
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/9.jpg?raw=true">
+<img width=240 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/10.jpg?raw=true">
 
+<br>
+ <br>	
+	
 - Segues
   - To add segue between two views, just Control + drag
   - If you want to call, use identifier
 
-<img> // control + drag with button and view
-<img> // Choose theme
+<img width=240 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/11.jpg?raw=true">
+<img width=240 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/12.jpg?raw=true" >
 
-
+<br>
+ <br>
 
 - Segue preparation
   - Because that preparation happens before outlet, errors can occur
@@ -138,27 +141,23 @@
     }
 ```
 
-
-
-
-
+<br>
+ <br>
+	
 - Split View Controller
 
-<img> // master
-<img> // Show Detail
+<img width=240 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/13.jpg?raw=true"> <img width=240 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/14.jpg?raw=true">
 
-
-
-
-
+<br>
+ <br>
+	
 - Tab Bar Controller
 
-<img>
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%207/imageFiles/15.jpg?raw=true">
 
-
-
-
-
+<br>
+ <br>
+	
 - Segue in code
   - Make segue between two views
 
@@ -233,7 +232,8 @@
     } // putting detail on top of master
 ```
 
-
+<br>
+ <br>	
 
 ### Timer
 
