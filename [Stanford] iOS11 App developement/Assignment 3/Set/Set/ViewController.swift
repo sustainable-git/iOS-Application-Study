@@ -49,12 +49,31 @@ class ViewController: UIViewController {
     
     @objc private func reShuffle(_ sender: UIRotationGestureRecognizer) {
         switch sender.state {
-        case .ended : buttonCollection.cardCollection.shuffle()
+        case .ended :
+            guard cardIndexs.count > 0 else { return } // error guard
+            
+            buttonCardDict.forEach{ set.cards.append($0.1); cardIndexs.append((cardIndexs.last ?? -1) + 1) }
+            buttonCardDict.removeAll()
+            buttonCollection.cardCollection.removeAll()
+            
+            for _ in 0..<numberOfShowingCards {
+                let card = set.cards[cardIndexs.first!]
+                let cardView = CardView()
+                let tap = UITapGestureRecognizer(target: self, action: #selector(tapCard(_:)))
+                cardView.addGestureRecognizer(tap)
+                cardView.initialize(shape: card.shape, number: card.number, shade: card.shade, color: card.color)
+                buttonCollection.cardCollection.append(cardView)
+                
+                buttonCardDict[cardView] = set.cards[cardIndexs.removeFirst()]
+            }
+            updateViewFromModel()
         default : break
         }
     }
     
     private func hint() -> (Card, Card, Card)? {
+        numberOfShowingCards = buttonCollection.cardCollection.count // initialize
+        
         for i in 0..<numberOfShowingCards-2 {
             for j in i+1..<numberOfShowingCards-1 {
                 for k in j+1..<numberOfShowingCards {

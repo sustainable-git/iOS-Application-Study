@@ -52,7 +52,7 @@ struct SetGame {
     }
     
     mutating func reset() {
-        cards.shuffle()
+        cards = initializer().shuffled()
         matchedCardArr.removeAll()
         selectedCardArr.removeAll()
         score = 0
