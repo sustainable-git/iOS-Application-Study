@@ -27,11 +27,63 @@
  <br>
 
 ### Contents
-- [Xcode 단축키](#Xcode-단축키)
-- [Mark Up](#Mark-up)
-- [Breakpoint](#Breakpoint)
-- [Debug with Console](#Debug-with-Console)
-- [Project Settings](#Project-Settings)
+- [Setting up in Xcode](#Setting-up-in-Xcode)
+- [Project with Git](#Project-with-Git)
+- [Commit](#Commit)
+- [Compare Changes](#Compare-Changes)
+- [Remote Repository](#Remote-Repository)
+- [Branch, Checkout, Merge](#Branch,-Checkout,-Merge)
 
 <br>
  <br>
+ 
+### Setting up in Xcode
+
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/01.jpg?raw=true"> <img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/02.jpg?raw=true">
+
+<br>
+ <br>
+
+### Project with Git
+
+- you can add Git while creating a project
+
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/03.jpg?raw=true">
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/04.jpg?raw=true">
+
+<br>
+ <br>
+
+### Commit
+
+<img width=240 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/05.jpg?raw=true"> <img width=240 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/06.jpg?raw=true">
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/07.jpg?raw=true">
+
+<br>
+ <br>
+
+### Compare Changes
+
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/09.jpg?raw=true"> <img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/10.jpg?raw=true">
+
+<br>
+ <br>
+ 
+### Remote Repository
+
+<img width=240 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/11.jpg?raw=true"> <img width=240 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/12.jpg?raw=true">
+
+<br>
+ <br>
+
+- You can add colleagues to your git repository
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/13.jpg?raw=true">
+
+<br>
+ <br>
+
+### Branch, Checkout, Merge
+
+|Branch|Checkout|Merge|
+|:-:|:-:|:-:|
+|<img width=240 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/14.jpg?raw=true">|<img width=240 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/15.jpg?raw=true">|<img width=240 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202/imageFiles/16.jpg?raw=true">|
