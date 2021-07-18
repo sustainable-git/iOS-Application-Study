@@ -1,47 +1,29 @@
-# Chapter8 : 에니메이션
+# Chapter8 : 애니메이션
 
-<img>
-
-
+<img src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%208/imageFiles/1.jpg?raw=true">
 
 <br>
-
  <br>
-
-
 
 ## Playing Card
 
-<img>
-
-
+<img width=100% src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%208/imageFiles/demo.gif?raw=true">
 
 <br>
-
  <br>
-
-
 
 ## Today i learned
 
 - [UIView Animation](#UIView-Animation)
-
 - [Dynamic Animation](#Dynamic-Animation)
-- [Memory Cycle Avoidance](#Memory-Cycle_Avoidance)
-
-
+- [Memory Cycle Avoidance](#Memory-Cycle-Avoidance)
 
 <br>
-
  <br>
-
-
 
 ### UIView Animation
 
-<img>
-
-
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%208/imageFiles/2.jpg?raw=true">
 
 - UIView Animation
   - Changes to certain UIView properties can animated over time
@@ -51,8 +33,6 @@
     - alpha
     - backgroundColor
   - Done with UIViewPropertyAnimator using closures
-
-
 
 - UIViewPropertyAnimator
 
@@ -75,13 +55,11 @@
       	delay: 2.0
       	option: [.allowUserInteraction],
       	animations: { myView,alpha = 0.0 },
-  	    completion: { if $0 == .end { myView.removeFromSuperview() } }
+      	completion: { if $0 == .end { myView.removeFromSuperview() } }
     )
     print("alpha = \(myView.alpha)") // alpha immediately become 0 when animation starts
   }
   ```
-
-
 
 - UIViewAnimationOptions
   - beginFromCurrentState
@@ -96,10 +74,7 @@
   - curveEaseIn
   - curveLinear
 
-
-
 - Entire view modification at once
-
   - Flip : `UIViewAnimationOptions.transitionFlipForm{Left, Right, Top, Bottom}`
   - Dissolve : `.transitionCrossDissolve`
   - Curling up or down : `.transitionCurl{Up, Down}`
@@ -108,47 +83,33 @@
 
   ```swift
   UIView.transition(with: myPlayingCardView,
-  								duration: 0.75,
-  								options: [.transitionFlipFromLeft],
-  								animations: { cardIsFaceUp = !cardIsFaceUp }
-  								completion: nil)
+      duration: 0.75,
+      options: [.transitionFlipFromLeft],
+      animations: { cardIsFaceUp = !cardIsFaceUp }
+      completion: nil)
   ```
 
-
-
 <br>
-
  <br>
-
-
 
 ### Dynamic Animation
 
-<img>
-
-
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%208/imageFiles/3.jpg?raw=true">
 
 - Dynamic Animation
-
   - Create a UIDynamicAnimator
-
     - `var animator = UIDynamicAnimator(referenceView: UIView)`
-
   - Create and add UIDynamicBehavior instances
-
     - e.g. `let gravity = UIGravityBehavior()`
     - `animator.addBehavior(gravity)`
     - e.g. `collider = UICollisionBehavior()`
     - `animator.addBehavior(collider)`
-
   - Add UIDynamicItems to a UIDynamicBehavior
-
     - `let item1: UIDynamicItem = ...`
     - `let item2: UIDynamicItem = ...`
     - `gravity.addItem(item1)`
     - `collider.addItem(item1)`
     - `gravity.addItem(item2)`
-
   - UIDynamicItem protocol
 
     ```swift
@@ -163,8 +124,6 @@
 
     - If you change center of transform while the animation is running
     - `func updateItemUsingCurrentState(item: UIDynamicItem)`
-
-
 
 - Behaviors
   - UIGravityBehavior
@@ -199,7 +158,6 @@
     - `var magnitude: CGFloat`
     
   - UIDynamicItemBehavior
-  
     - `var allowsRotation: Bool`
     - `var friction: CGFloat`
     - `var elasticity: CGFloat`
@@ -208,17 +166,11 @@
     - `func angularVelocity(for: UIDynamicItem) -> CGFloat`
   
   - UIDynamicBehavior
-  
     - Superclass of behaviors
-  
     - You can collect other behaviors into one
-  
     - `func addChildBehavior(UIDynamicBehavior)`
-  
     - `var dynamicAnimator: UIDynamicAnimator? { get }`
-  
     - `func willMove(to: UIDynamicAnimator?)`
-  
     - `var action: (() -> Void)?` // executes everytime
   
       
@@ -229,37 +181,28 @@
     - `func dynamicAnimatorDidPause(UIDynamicAnimator)`
     - `func dynamicAnimatorWillPause(UIDynamicAnimator)`
 
-
-
 <br>
-
  <br>
 
 ### Memory Cycle Avoidance
 
-<img>
-
-
+<img width=480 src="https://github.com/sustainable-git/iOS-Application-Study/blob/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%208/imageFiles/4.jpg?raw=true">
 
 - Memory Cycle Avoidance
-
   - Example of using `action` and avoiding memory cycle
 
     ```swift
     if let pushBehavior = UIPushBehavior(items: [...], mode: .instantaneous) {
     	pushBehavior.magnitude = ...
     	pushBehavior.anglie = ...
-    	pushBehavior.action = {																				// memory cycle problem!!
-    		pushBehavior.dynamicAnimator!.removeBehavior(pushBehavior)	// action closure and pushBehavior
-    	}																															// can't ever leave the heap
+    	pushBehavior.action = {                                     // memory cycle problem!!
+    		pushBehavior.dynamicAnimator!.removeBehavior(pushBehavior) // action closure and pushBehavior
+    	}                                                           // can't ever leave the heap
     	animator.addBehavior(pushBehavior)
     }
     ```
-
-
-
+    
 - Closure Capturing
-
   - Local variables of a closure
 
     ```swift
@@ -269,7 +212,7 @@
     ```
 
   - Locals can be declared weak
-
+  
     ```swift
     var foo = { [weak x = someInstanceOfaClass, y = "hello"] in
     	// x is Optional
@@ -284,22 +227,16 @@
     }
     ```
 
-
-
 - Memory Cycle Avoidance
-
   - Example of using `action` and avoiding memory cycle
 
     ```swift
     if let pushBehavior = UIPushBehavior(items: [...], mode: .instantaneous) {
     	pushBehavior.magnitude = ...
     	pushBehavior.anglie = ...
-    	pushBehavior.action = { [unowned pushBehavior] in							// memory cycle is broken
+    	pushBehavior.action = { [unowned pushBehavior] in // memory cycle is broken
     		pushBehavior.dynamicAnimator!.removeBehavior(pushBehavior)
     	}
     	animator.addBehavior(pushBehavior)
     }
     ```
-
-
-
