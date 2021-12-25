@@ -16,3 +16,4 @@
 |2021-07-14|Graphical Set|[Assignment 3](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/Assignment%203)
 |2021-07-15|2 : 깃허브를 이용한 소스 코드 버전 관리|[Friday Session 2](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202)
 |2021-07-18|애니메이션|[CHAPTER 8](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%208)
+|2021-12-25|Animated Set|[Assignment 4](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/Assignment%204)|
