@@ -109,6 +109,7 @@ class CardCollectionView: UIView {
         else { return }
         self.cardTransform(from: cardView, to: startView)
         self.addSubview(cardView)
+        self.sendSubviewToBack(cardView)
         
         UIViewPropertyAnimator.runningPropertyAnimator(
             withDuration: 0.5,

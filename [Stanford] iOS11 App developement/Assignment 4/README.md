@@ -5,7 +5,7 @@
 <br>
 <br>
 
-<img src="./imageFiles/1.png?raw=true">
+<img width=600 src="./imageFiles/1.png?raw=true">
 
 <br>
  <br>
