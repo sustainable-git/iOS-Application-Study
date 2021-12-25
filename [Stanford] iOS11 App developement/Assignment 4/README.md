@@ -1,19 +1,18 @@
 # Assignment 4 : Animated Set
 
-[Assignment4 Pdf📎]()
+[Assignment4 Pdf📎](./Programming_Project%204_Animated_Set.pdf)
 
 <br>
 <br>
 
-<img src="">
-
+<img src="./imageFiles/1.png?raw=true">
 
 <br>
  <br>
 
 ## Animated Set + Concentration
 
-<img width=100% src="">
+<img width=100% src="./imageFiles/2.gif?raw=true">
 
 <br>
  <br>
@@ -47,7 +46,7 @@
 
 |Affine+frame|only Affine|
 |:-:|:-:|
-|||
+|<img height=400 src="./imageFiles/3.gif?raw=true">|<img height=400 src="./imageFiles/4.gif?raw=true">|
 
 <br>
 
