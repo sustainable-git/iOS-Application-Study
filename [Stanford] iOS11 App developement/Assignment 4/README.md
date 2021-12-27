@@ -48,6 +48,22 @@
 |:-:|:-:|
 |<img height=400 src="./imageFiles/3.gif?raw=true">|<img height=400 src="./imageFiles/4.gif?raw=true">|
 
+- 2021.12.27 추가
+
+    - AffineTransform 에 대해 좀 더 공부해 보면서, 계산이 이상해진 이유를 계속 생각하고 있었음
+    - 왼쪽 상단의 망가진 Animation을 보면 시작할 때의 가로 길이가 목표로 하는 위치에서의 가로 길이와 동일하게 보임
+    - iOS의 Animation은 View가 시간적으로 움직이게 보일 뿐, 내부에서는 값이 바로 변경된다는 것을 생각해 냄
+    - Animation을 줄 때, Affine 변환보다 Frame을 바꾸는 것이 우선이었던 것이 생각나니, 순서의 문제인가 하는 생각이 들었음
+    - 그래서 90도 회전을 먼저 주고, Frame을 변경시켜 위치를 이동해 봄
+    - 결과는 다음과 같다. 원래 있었던, Card가 원을 그리며 돌아서 들어가는 버그도 해결이 됨. ~~그게 더 이쁜 것 같은 것은 기분탓이다.~~
+
+|only Affine(before)|Affine+frame(after)|
+|:-:|:-:|
+|<img height=400 src="./imageFiles/6.gif?raw=true">|<img height=400 src="./imageFiles/5.gif?raw=true">|
+<img height=400 src="./imageFiles/7.jpg?raw=true">
+
+- 왼 쪽이 수정된 버전, 오른쪽의 Affine변환을 위한 긴~ 계산식이 모두 사라졌다
+
 <br>
 
 4. UISnapBehavior와 Rotation
