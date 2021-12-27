@@ -65,7 +65,10 @@ class CardCollectionView: UIView {
                     withDuration: 1,
                     delay: 0,
                     options: .curveEaseInOut) {
-                        self.cardTransform(from: cardView, to: endView)
+                        let endOrigin = endView.convert(CGPoint(x: 0, y: 0), to: self)
+                        cardView.frame = CGRect(x: 0, y: 0, width: endView.frame.height, height: endView.frame.width)
+                        cardView.transform = CGAffineTransform(rotationAngle: .pi/2)
+                        cardView.frame.origin = endOrigin
                     } completion: { _ in
                         UIView.transition(
                             with: cardView,
@@ -90,24 +93,15 @@ class CardCollectionView: UIView {
         }
     }
     
-    private func cardTransform(from cardView: UIView, to targetView: UIView) {
-        let convertedOrigin = targetView.convert(CGPoint(x: 0, y: 0), to: self)
-        let ratio: CGFloat = targetView.frame.height / cardView.frame.width
-        let diffX: CGFloat = (cardView.frame.width - ratio * cardView.frame.width) / 2
-        let diffY: CGFloat = (cardView.frame.height - ratio * cardView.frame.height) / 2
-        let difference: CGFloat = (cardView.frame.height - cardView.frame.width) / 2
-        let resizer = CGAffineTransform(scaleX: ratio, y: ratio)
-        let mover = CGAffineTransform(translationX: convertedOrigin.x - cardView.frame.minX + difference - diffY, y: convertedOrigin.y - cardView.frame.minY - difference - diffX)
-        let rotator = CGAffineTransform(rotationAngle: .pi/2)
-        let combination = resizer.concatenating(rotator).concatenating(mover)
-        cardView.transform = combination
-    }
-    
     private func appendCardsWithAnimation(to views: [CardView]) {
         guard let cardView = views.first,
               let startView = self.startView
         else { return }
-        self.cardTransform(from: cardView, to: startView)
+        let endFrame = cardView.frame
+        let startOrigin = startView.convert(CGPoint(x: 0, y: 0), to: self)
+        cardView.frame = CGRect(x: 0, y: 0, width: startView.frame.height, height: startView.frame.width)
+        cardView.transform = CGAffineTransform(rotationAngle: .pi/2)
+        cardView.frame.origin = startOrigin
         self.addSubview(cardView)
         self.sendSubviewToBack(cardView)
         
@@ -116,6 +110,7 @@ class CardCollectionView: UIView {
             delay: 0,
             options: .curveEaseInOut) {
                 cardView.transform = CGAffineTransform.identity
+                cardView.frame = endFrame
             } completion: { [weak self] _ in
                 UIView.transition(
                     with: cardView,
