@@ -17,3 +17,4 @@
 |2021-07-15|2 : 깃허브를 이용한 소스 코드 버전 관리|[Friday Session 2](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%202)
 |2021-07-18|애니메이션|[CHAPTER 8](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%208)
 |2021-12-25|Animated Set|[Assignment 4](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/Assignment%204)|
+|2021-01-17|뷰 컨트롤러의 라이프사이클과 스크롤 뷰|[CHAPTER 9](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%209)|
