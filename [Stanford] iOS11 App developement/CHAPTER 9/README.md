@@ -1,13 +1,13 @@
 # Chapter9 : 뷰 컨트롤러의 라이프사이클과 스크롤 뷰
 
-<img src="01">
+<img src="./imageFiles/01.jpg">
 
 <br>
  <br>
 
 ## Caccini
 
-<img width=100% src="11">
+<img width=100% src="./imageFiles/11.gif">
 
 <br>
  <br>
@@ -15,15 +15,15 @@
 ## Today i learned
 
 - [View Controller Lifecycle](#View-Controller-Lifecycle)
-- [Scroll View](Scroll-View)
-- [Demo](Demo)
+- [Scroll View](#Scroll-View)
+- [Demo](#Demo)
 
 <br>
  <br>
 
 ### View Controller Lifecycle
 
-<img width=480 src="02">
+<img width=480 src="./imageFiles/02.jpg">
 
 - View Controller Lifecycle
     - Why does this matter
@@ -83,13 +83,14 @@
     - viewWill/DidAppear, viewWill/DidDisappear, 
     - didReceiveMemoryWarning
 
-<img width=480 src="03">
+<img width=480 src="./imageFiles/03.jpg">
 
 <br>
+ <br>
 
 ### Scroll View
 
-<img width=480 src="04"> <img width=480 src="05">
+<img width=480 src="./imageFiles/04.gif"> <img width=480 src="./imageFiles/05.jpg">
 
 - Scroll View
     - You create contentSize of scrollView
@@ -101,13 +102,13 @@
     scrollView.addSubview(aerial)
     ```
 
-<img width=480 src="06"> <img width=480 src="07">
+<img width=480 src="./imageFiles/06.jpg"> <img width=480 src="./imageFiles/07.jpg">
 
 - Position, Visible area
     - `let upperLeftOfVisible: CGPoint = scrollView.contentOffset`
     - `let visibleRect: CGRect = aerial.convert(scrollView.bounds, from: scrollView)`
 
-<img width=480 src="08">
+<img width=480 src="./imageFiles/08.jpg">
 
 - Scroll View
     - Don't forget to set contentSize
@@ -129,14 +130,15 @@
         - `func zoom(to rect: CGRect, animated: Bool)`
 
 <br>
+ <br>
 
 ### Demo
 
-<img src="09">
+<img src="./imageFiles/09.jpg">
 
 - How can you tell if you are on screen
     - check `view.window != nil`
 
-<img src="10">
+<img src="./imageFiles/10.jpg">
 
 - You can set placeHolder's intrinc Size
