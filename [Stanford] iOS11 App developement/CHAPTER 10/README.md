@@ -1,20 +1,20 @@
 # Chapter10 : 멀티 쓰레드와 오토레이아웃
 
-<img src="01">
+<img src="./imageFiles/01.jpg">
 
 <br>
  <br>
 
 ## Cassini
 
-<img width=100% src="11">
+<img width=100% src="./imageFiles/12.gif">
 
 <br>
  <br>
  
 ## Concentration
 
-<img width=100% src="12">
+<img width=100% src="./imageFiles/11.gif">
 
 <br>
  <br>
@@ -31,7 +31,7 @@
 
 ### Multithreading
 
-<img width=480 src="02">
+<img width=480 src="./imageFiles/02.jpg">
 
 - Reason
     - We want to keep long running things off of the main queue where the UI runs
@@ -70,7 +70,7 @@
     - Operation
     - OperationQueue
 
-<img width=480 src="03">
+<img width=480 src="./imageFiles/03.jpg">
 
 - Multithreading iOS API
     - summary: a b g h c d f e
@@ -94,13 +94,13 @@ h:    print("done firing off the request for the url's contents")
  
 ### Cassini
 
-<img witdh=480 src="04"> <img witdh=480 src="05">
+<img width=480 src="./imageFiles/04.jpg"> <img width=480 src="./imageFiles/05.jpg">
 
 - Error
     - `prepare(for: seque)` is before the outlet is set
     - Use optional chaining
 
-<img witdh=480 src="06">
+<img width=480 src="./imageFiles/06.jpg">
 
 - Weak reference
 
@@ -108,7 +108,7 @@ h:    print("done firing off the request for the url's contents")
     - so there is no reference cycle
     - **but** if the view controller disappears while the closure is running, view controller will be captured in the heap
 
-<img witdh=480 src="07">
+<img witdh=480 src="./imageFiles/07.jpg">
 
 - Reallocate problem
     - `fetchImage()` can be called multiple times
@@ -120,7 +120,7 @@ h:    print("done firing off the request for the url's contents")
  
 ### Autolayout
 
-<img witdh=480 src="08"> <img witdh=480 src="09">
+<img width=480 src="./imageFiles/08.jpg"> <img width=480 src="./imageFiles/09.jpg">
 
 - Size Classes
     - iPhone
@@ -129,7 +129,7 @@ h:    print("done firing off the request for the url's contents")
     - iPhone Plus
         - 🚦 : compact width, **regular** height
         - 🚥 : compact width, **regular** height
-    - iPhone Plus
+    - iPad
         - 🚦 : **regular** width, **regular** height
         - 🚥 : **regular** width, **regular** height
         - Split View: master has compact width
@@ -145,7 +145,7 @@ h:    print("done firing off the request for the url's contents")
 
 - Vary for Traits
 
-<img witdh=480 src="10">
+<img witdh=480 src="./imageFiles/10.jpg">
 
 - Constraint
     - Vary for Traits is deprecated on Xcode 13
