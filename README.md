@@ -13,6 +13,6 @@
 |**Assignment 3 - Graphical Set**|**Assignment 4 - Animaged Set + Concentration**|
 
 
-- 목적 : Naver Connect의 edwith에서 제공하는 Stanford 강의르 듣고 과제를 풀어보는 프로젝트입니다.
+- 목적 : Stanford cs193p 강의를 듣고 과제를 풀어보는 프로젝트입니다.
 - 기간 : 3개월(진행중) 2021.06.28. ~ 2021.07.18. / 2021.12.13. ~ 진행중
 - [바로가기](./%5BStanford%5D%20iOS11%20App%20developement)
