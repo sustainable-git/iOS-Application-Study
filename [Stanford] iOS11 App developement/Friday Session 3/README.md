@@ -1,6 +1,6 @@
 # Friday Session 3 : 인스트루먼츠
 
-<img src="01">
+<img width=600 src="./imageFiles/01.jpg">
 
 - Instruments
     - Tool which helps you how to profile code
@@ -29,7 +29,7 @@
 
 ### Activity Monitor
 
-<img width=480 src="02">
+<img width=480 src="./imageFiles/02.jpg">
 
 - Activity Monitor
     - CPU, memory, disk and network usage
@@ -40,7 +40,7 @@
 
 ### Time Profiler
 
-<img width=480 src="03"> <img width=480 src="04">
+<img width=480 src="./imageFiles/03.jpg"> <img width=480 src="./imageFiles/04.jpg">
 
 - Time profiler
     - You can use to find which one takes so much time on CPU
@@ -53,7 +53,7 @@
 
 ### Allocations
 
-<img width=480 src="05"> 
+<img width=480 src="./imageFiles/05.jpg"> 
 
 - Allocations
     - You can see how many memories are getting allocated by time
@@ -63,8 +63,8 @@
 
 ### Leaks
 
-<img width=480 src="06"> <img width=480 src="07">
-<img width=480 src="08"> <img width=480 src="09">
+<img width=480 src="./imageFiles/06.jpg"> <img width=480 src="./imageFiles/07.jpg">
+<img width=480 src="./imageFiles/08.jpg"> <img width=480 src="./imageFiles/09.jpg">
 
 - Leaks
     - You can find where the memory lick occurs
