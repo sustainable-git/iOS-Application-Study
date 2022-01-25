@@ -1,6 +1,6 @@
 # Projects
 
-- [[Stanford] cs193p](#[Stanford]-cs193p)
+- [[Stanford] cs193p](./%5BStanford%5D%20iOS11%20App%20developement)
 
 <br>
 
