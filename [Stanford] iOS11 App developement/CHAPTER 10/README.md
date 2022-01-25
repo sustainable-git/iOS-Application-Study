@@ -108,7 +108,7 @@ h:    print("done firing off the request for the url's contents")
     - so there is no reference cycle
     - **but** if the view controller disappears while the closure is running, view controller will be captured in the heap
 
-<img witdh=480 src="./imageFiles/07.jpg">
+<img width=480 src="./imageFiles/07.jpg">
 
 - Reallocate problem
     - `fetchImage()` can be called multiple times
