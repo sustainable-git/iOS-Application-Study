@@ -19,3 +19,4 @@
 |2021-12-25|Animated Set|[Assignment 4](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/Assignment%204)|
 |2021-01-17|뷰 컨트롤러의 라이프사이클과 스크롤 뷰|[CHAPTER 9](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%209)|
 |2021-01-22|멀티 쓰레드와 오토레이아웃|[CHAPTER 10](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%2010)|
+|2021-01-25|3 : 인스트루먼츠|[Friday Session 3](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%203)|
