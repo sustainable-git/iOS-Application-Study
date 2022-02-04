@@ -1,13 +1,13 @@
 # Chapter11 : 드레그 & 드랍, 테이블뷰와 컬렉션 뷰 - Part 1
 
-<img src="01">
+<img src="./imageFiles/01.jpg">
 
 <br>
  <br>
 
 ## EmojiArt
 
-<img width=100% src="Demo">
+<img width=100% src="./imageFiles/Demo.gif">
 
 <br>
  <br>
@@ -23,7 +23,7 @@
 
 ### Drag and Drop
 
-<img width=480 src="02">
+<img width=480 src="./imageFiles/02.jpg">
 
 - Drag and Drop
     - Multitouch allows while on drag and drop
@@ -74,7 +74,7 @@
  
 ### UITableView and UICollectionView
 
-<img width=480 src="03">
+<img width=480 src="./imageFiles/03.jpg">
 
 - UITableView
     - list
@@ -110,14 +110,14 @@
         - `func collectionView(_:, cellForItemAt:) -> UICollectionViewCell`
         - `func collectionView(_:, cellForItemAt:) -> UICollectionViewCell`
 
-<img width=480 src="04"> <img width=480 src="05">
+<img width=480 src="./imageFiles/04.jpg"> <img width=480 src="./imageFiles/05.jpg">
 
 - Cell Reuse
     - For efficiency, tableView reuses the cells
     - `dequeueReusableCell(withIdentifier:)` get created by copying a **prototype cell** of storyboard
     - **Reuses have serious implications for multithreading**
 
-<img width=480 src="06">
+<img width=480 src="./imageFiles/06.jpg">
 
 - Custom UITableViewCell
     - To put the outlets, you should subclass UITableViewCell
@@ -134,7 +134,7 @@
     }
 ```
 
-<img width=480 src="07">
+<img width=480 src="./imageFiles/07.jpg">
 
 - Static Table View
     - You don't need UITableViewDataSource
