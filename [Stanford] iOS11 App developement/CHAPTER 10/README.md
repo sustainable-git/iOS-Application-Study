@@ -50,10 +50,12 @@
 - Global Queue
     - Concurrent queue
     - `DispatchQueue.global(qos: DispatchQoS)`
+        - 강의 오류 수정 : 2021. 02. 14.
         - DispatchQoS.userInteractive
         - DispatchQoS.userInitiated
-        - DispatchQoS.background
+        - DispatchQoS.default
         - DispatchQos.utility
+        - DispatchQoS.background
 
 - Way to put on the Queue
     - async
