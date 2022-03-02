@@ -22,3 +22,4 @@
 |2021-01-25|3 : 인스트루먼츠|[Friday Session 3](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/Friday%20Session%203)|
 |2021-02-04|드레그 & 드랍, 테이블뷰와 컬렉션 뷰 - Part 1|[CHAPTER 11](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%2011)|
 |2021-02-14|드레그 & 드랍, 테이블뷰와 컬렉션 뷰 - Part 2|[CHAPTER 12](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%2012)|
+|2021-03-02|데이터 저장하기와 도큐멘트 - 이론|[CHAPTER 13](https://github.com/sustainable-git/iOS-Application-Study/tree/main/%5BStanford%5D%20iOS11%20App%20developement/CHAPTER%2013)|
