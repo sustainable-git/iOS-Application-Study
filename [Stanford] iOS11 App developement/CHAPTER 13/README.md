@@ -90,7 +90,6 @@
     - Application Support directory - Permanent storage. Not be seen directly by the user
     - Cache directory - temporary files
     - Other directories...
-
     - ```swift
         let url: URL = FileManager.default.URL(
             for directory: FileManager.SearchDirectory.documentDirectory,
@@ -99,11 +98,9 @@
             create: true
         )
       ```
-
     - Appending 
         - `func appendingPathComponent(String) -> URL`
         - `func appendingPathExtension(String) -> URL`
-
     - Finding
         - `var isFileURL: Bool`
         - `func resourceValues(for keys: [URLResourceKey]) throws -> [URLResourceKey: Any]?`
@@ -154,14 +151,14 @@
     - A database in the cloud
     - [[Setting Up Core Data with CloudKit]](https://developer.apple.com/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit)
     - Dynamic schema Creation
-    - ```swift
-      let db = CKContainer.default.publicCloudDatabase
-      let tweet = CKRecord(“Tweet”)
-      tweet[“text”] = “140 characters of pure joy”
-      let tweeter = CKRecord(“TwitterUser”)
-      tweet[“tweeter”] = CKReference(record: tweeter, action: .deleteSelf)
-      db.save(tweet) { (savedRecord: CKRecord?, error: NSError?) -> Void in }
-      ```
+        - ```swift
+          let db = CKContainer.default.publicCloudDatabase
+          let tweet = CKRecord(“Tweet”)
+          tweet[“text”] = “140 characters of pure joy”
+          let tweeter = CKRecord(“TwitterUser”)
+          tweet[“tweeter”] = CKReference(record: tweeter, action: .deleteSelf)
+          db.save(tweet) { (savedRecord: CKRecord?, error: NSError?) -> Void in }
+          ```
     - Query
         - ```swift
           let db = CKContainer.default.publicColudDatabase
