@@ -3,4 +3,5 @@
 ## TimeLine
 |Date|Lecture|Link|
 |:-|:-|:-|
-|2022-03-22|iOS11, Xcode9와 Swift4 소개|[Lecture 1](./Lecture%201)|
+|2022-03-22|Getting Started with SwiftUI|[Lecture 1](./Lecture%201)|
+|2022-03-23|Learning More about SwiftUI|[Lecture 2](./Lecture%202)|
