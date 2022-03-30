@@ -36,7 +36,7 @@
 
     - theme의 종류에 따라 title과 card 색이 변경됨
 
-    - <img src="./imageFiles/03.jpg">
+    - <img width=400 src="./imageFiles/03.jpg">
 
 <br>
 
@@ -118,7 +118,7 @@
 
     - 하단에 배치
 
-    - <img src="./imageFiles/04.jpg">
+    - <img width=320 src="./imageFiles/04.jpg">
 
 <br>
 
@@ -179,4 +179,4 @@
 
     - New Game button 위에 배치함
 
-    - <img src="./imageFiles/04.jpg">
+    - <img width=320 src="./imageFiles/04.jpg">
