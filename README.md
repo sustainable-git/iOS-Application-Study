@@ -1,6 +1,7 @@
 # Projects
 
-- [[Stanford] cs193p](./%5BStanford%5D%20iOS11%20App%20developement)
+- [[Stanford] cs193p - SwiftUI](./%5BStanford%5D%20Developing%20Applications%20for%20iOS%20using%20SwiftUI)
+- [[Stanford] cs193p - UIKit](./%5BStanford%5D%20iOS11%20App%20developement)
 
 <br>
 
