@@ -12,3 +12,4 @@
 |2022-03-31|Properties Layout @ViewBuilder|[Lecture 5](./Lecture%205)|
 |2022-04-07|Protocols Shapes|[Lecture 6](./Lecture%206)|
 |2022-05-11|Programming Assignment 3|[Programming Assignment 3](./Programming%20Assignment%203)|
+|2022-05-25|ViewModifier Animation|[Lecture 7](./Lecture%207)|
