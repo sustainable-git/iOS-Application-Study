@@ -37,3 +37,21 @@
     - arch -x86_64 pod install
 
 <br>
+
+## Tutorial 2
+
+- RIB 및 화면 전환의 과정 1
+    - LoggedOutViewController가 listener(LoggedOutInteractor)에게 logic이 발생함을 알리며 data를 보냄
+    - LoggedOutInteractor가 listener(RootInteractor)에게 business logic을 거쳐 data를 보냄
+    - RootInteractor가 router(RootRouter)에게 logic이 발생함을 알리며 data를 보냄
+    - RootRouter가 detachChild(_:)로 loggedOut(?이거라우턴가?)을 자식 RIB에서 떼어냄
+    - RootRouter의 viewController는 loggedOut의 viewController를 dismiss 함
+    - RootRouter는 loggedOut을 nil로 변경함
+    - RootRouter는 loggedInBuilder(LoggedInBuilder)를 build(withListener:) 함수로 객체를 만들게 함
+    - LoggedInBuilder는 LoggedInRouter를 만들어 RootRouter에게 참조값을 제공함
+    - RootRouter는 attachChild(_:)로 LoggedInRouter를 자식 RIB으로 저장함
+
+- RIB 및 화면 전환의 과정 2
+    - LoggedInRouter는 didLoad()에서 offGameBuilder를 이용해 OffGameRouter를 만듦
+    - LoggedInRouter는 attachChild(_:)로 OffGameRouter를 자식 RIB으로 저장함
+    - LoggedInRouter는 OffGameRouter의 viewControllable을 present()함
