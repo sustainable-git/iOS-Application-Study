@@ -44,7 +44,7 @@
     - LoggedOutViewController가 listener(LoggedOutInteractor)에게 logic이 발생함을 알리며 data를 보냄
     - LoggedOutInteractor가 listener(RootInteractor)에게 business logic을 거쳐 data를 보냄
     - RootInteractor가 router(RootRouter)에게 logic이 발생함을 알리며 data를 보냄
-    - RootRouter가 detachChild(_:)로 loggedOut(?이거라우턴가?)을 자식 RIB에서 떼어냄
+    - RootRouter가 detachChild(_:)로 loggedOut(LoggedOutRouter)을 자식 RIB에서 떼어냄
     - RootRouter의 viewController는 loggedOut의 viewController를 dismiss 함
     - RootRouter는 loggedOut을 nil로 변경함
     - RootRouter는 loggedInBuilder(LoggedInBuilder)를 build(withListener:) 함수로 객체를 만들게 함
