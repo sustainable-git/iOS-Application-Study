@@ -55,3 +55,41 @@
     - LoggedInRouter는 didLoad()에서 offGameBuilder를 이용해 OffGameRouter를 만듦
     - LoggedInRouter는 attachChild(_:)로 OffGameRouter를 자식 RIB으로 저장함
     - LoggedInRouter는 OffGameRouter의 viewControllable을 present()함
+
+<br>
+
+## Tutorial 3
+
+- 목표
+    - Builder를 통해 dynamic dependency를 자식 RIB에게 전달하기
+    - static dependencies를 Dependency Injection tree를 이용해 전달하기
+    - RIB lifecycle을 이용하여 Rx stream의 lifecycle 관리하기
+    
+- `LoggedOut` RIB에서 `Root` RIB으로 보낸 값을 자식인 `LoggedIn` RIB으로 보내기
+    - LoggedInBuilder의 build 함수의 매개변수를 build(withListner:, player1Name:, player2Name)로 변경
+    - LoggedInComponent는 player1Name과 player2Name을 property로 소유함 
+    - LoggedInBuilder가 build 함수에서 LoggedInComponent를 만들고 이를 OffGameBuilder와 TicTacToeBuilder에 주입
+    
+- DI tree를 이용해 `LoggedIn` RIB에서 하위 RIB으로 값을 보내기
+    - OffGameBuilder는 LoggedInComponent를 받아 dependency(OffGameDependecy)로서 소유함
+        - LoggedInComponent는 extension에서 OffGameDependency protocol을 채택함
+    - OffGameBuilder는 build 함수에서 OffGameViewController의 생성자의 매개변수에서 player1Name과 player2Name을 받아 생성한다
+    
+- Rx stream을 사용해 형제 RIB 사이에서 값을 추적하기
+    - LoggedIn RIB에서 ScoreStream 파일을 생성
+    - LoggedInComponent가 ScoreStreamIpl 객체를 sigleton으로 만드는 computed property를 소유
+    - LoggedInBuilder가 LoggedInInteractor에 component.mutableScoreStream을 주입
+    - OffGameDependency protocol은 read-only ScoreStream를 가짐
+    - OffGameComponent는 ScoreStream을 반환하는 computed property를 소유
+    - OffGameBuilder가 OffGameInteractor에 component.scoreStream을 주입
+    - LoggedInComponent는 mutableScoreStream을 read-only ScoreStream의 형태로 소유하여 dependency를 제공
+
+- stream 값을 화면에 보여주기
+    - OffGameInteractor는 didBecomeActive()에서 updateScore()를 호출
+    - OffGameInteractor는 updateScore()에서 scoreStream을 구독하고, 값이 변경되면  presenter(OffGameViewController)의 set(score:) 함수를 호출한다
+
+- stream 값을 변경하는 과정
+    - TicTacToeInteractor는 placeCurrentPlayerMake(atRow:,col:)함수에서 winner가 생겼을 때에 presenter(TicTacToeViewController)의 announce 함수를 실행하고, handler를 주입한다.
+    - TicTacToeViewController는 announce(winner:,withCompletionHandler:) 함수에서 handler()를 호출한다
+    - handler()가 호출되면 listener(LoggedInInteractor)의 gameDidEnd(withWinner:) 함수를 호출한다
+    - LoggedInInteractor는 mutableScoreStream.updateScore(withWinner:) 함수를 호출하고, router?.routeToOffGame() 함수를 호출한다
