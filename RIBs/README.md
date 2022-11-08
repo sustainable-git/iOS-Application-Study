@@ -93,3 +93,31 @@
     - TicTacToeViewController는 announce(winner:,withCompletionHandler:) 함수에서 handler()를 호출한다
     - handler()가 호출되면 listener(LoggedInInteractor)의 gameDidEnd(withWinner:) 함수를 호출한다
     - LoggedInInteractor는 mutableScoreStream.updateScore(withWinner:) 함수를 호출하고, router?.routeToOffGame() 함수를 호출한다
+
+<br>
+
+## Tutorial 4
+
+- 목표
+    - 앱에 Deep link 지원을 추가하고 safari에서 URL을 열기
+    - RIB 워크플로 및 실행 가능한 항목의 기본 사항을 이해하기
+    - 딥링크를 통해 워크플로를 시작하기
+
+- URL handler 구현
+    - Custom URL scheme의 handler로 등록하기 위해 info.plist에 `URL identifier`와 `URL schemes`를 추가
+    - AppDelegate는 `URLHandler`를 채택한 프로퍼티(RootInteractor)를 소유
+    - RootInteractor는 `URLHandler`와 `RootActionableItem` protocol을 채택
+    - RootInteractor는 handle(_) 함수에서 LaunchGameWorkflow(url:) 함수를 구독
+    - RootInteractor는 loggedInActionableItemSubject를 프로퍼티로 소유한다
+    - RootInteractor는 waitForLogin() 함수에서 loggedInActionableItemSubject를 반환
+    - RootInteractor는 didLogin(withPlayer1Name:player2Name:) 함수에서 login 성공시 loggedInActionableItemSubject.onNext() 함수를 실행
+
+- 순서
+    - Custom URL 실행
+    - application(_:open:sourceApplication:annotation) 함수 실행
+    - urlHandler(RootInteractor)의 handle(_:) 함수를 호출
+    - RootInteractor는 launchGameWorkflow를 만들고 구독함
+    - LaunchGameWorkflow는 url의 유효성을 검사하고, RootActionableItem(RootInteractor)의 waitForLogin() 함수를 호출
+    - RootInteractor는 waitForLogin() 함수에서 loggedInActionableItemSubject를 반환함
+    - RootInteractor가 didLogin() 함수가 불리면 loggedInActionableItemSubject가 onNext(_:) 함수를 호출함
+    - LaunchGameWorkflow는 loggedInActionableItem(LoggedInInteractor)의 launchGame(with:) 함수를 차례로 호출
